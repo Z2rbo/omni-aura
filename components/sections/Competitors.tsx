@@ -1,5 +1,3 @@
-"use client";
-
 import { Check, X, Minus } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 

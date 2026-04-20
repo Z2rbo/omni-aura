@@ -1,5 +1,3 @@
-"use client";
-
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { Wallet, Users2, HeartHandshake, BookOpenCheck } from "lucide-react";

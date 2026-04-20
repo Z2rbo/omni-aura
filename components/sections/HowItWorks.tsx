@@ -1,5 +1,3 @@
-"use client";
-
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { PhoneFrame } from "@/components/phone/PhoneFrame";

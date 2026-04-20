@@ -1,5 +1,3 @@
-"use client";
-
 import { AlertTriangle, Clock, Heart, ShieldAlert } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";

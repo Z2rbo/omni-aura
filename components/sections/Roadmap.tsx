@@ -1,5 +1,3 @@
-"use client";
-
 import { Check, Flag, Rocket, Target, Globe2 } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
