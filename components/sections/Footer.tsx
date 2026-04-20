@@ -27,7 +27,6 @@ const cols: NavCol[] = [
   {
     title: "Команда",
     links: [
-      { label: "ИТМО ФТМИ", href: "https://fbit.itmo.ru/", external: true },
       {
         label: "Связаться",
         href: "mailto:team@omni-aura.app",
@@ -92,8 +91,8 @@ export function Footer() {
           <div className="lg:col-span-5">
             <LogoWordmark />
             <p className="mt-5 max-w-sm text-pretty text-[15px] text-ink-soft">
-              Первый русскоязычный ИИ-коуч с computer vision. Проект ФТМИ
-              ИТМО — финал СТАРТ+ 2026.
+              Первый русскоязычный ИИ-коуч с computer vision. MVP
+              в разработке — 2026.
             </p>
 
             {status === "success" ? (
@@ -178,7 +177,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-ink/5 pt-8 text-[12px] text-gray">
-          <p>© 2026 OMNI AURA · Команда студентов ФТМИ ИТМО</p>
+          <p>© 2026 OMNI AURA</p>
           <div className="flex items-center gap-4">
             <Link
               href="mailto:team@omni-aura.app"

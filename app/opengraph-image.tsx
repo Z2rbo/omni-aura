@@ -112,7 +112,7 @@ export default async function OGImage() {
               textTransform: "uppercase",
             }}
           >
-            ФТМИ ИТМО · 2026
+            MVP · 2026
           </div>
         </div>
 

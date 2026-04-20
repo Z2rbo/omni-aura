@@ -15,7 +15,7 @@ type Review = {
 const reviews: Review[] = [
   {
     name: "Алина Д.",
-    role: "Студентка · 3 курс ИТМО",
+    role: "Студентка · 21 год",
     avatar: "АД",
     gradient: "from-brand-300 to-brand-500",
     quote:
@@ -56,7 +56,7 @@ export function Testimonials() {
           <span className="aurora-text">сказали «вау»</span>.
         </>
       }
-      lead="52 пользователя прошли 6-недельный тест. Средний рейтинг — 4.9/5. Вот что говорят."
+      lead="Первые пользователи после пилотного прогона MVP. Вот что они говорят."
     >
       <div className="grid gap-5 md:grid-cols-3">
         {reviews.map((r, i) => (
@@ -107,18 +107,18 @@ export function Testimonials() {
       <Reveal delay={420}>
         <div className="mt-12 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 rounded-full bg-white/60 px-6 py-4 text-[13px] text-ink-soft shadow-hairline ring-1 ring-ink/5 backdrop-blur">
           <span className="flex items-center gap-2">
-            <span className="font-extrabold tabular-nums text-ink">4.9 / 5</span>
+            <span className="font-extrabold tabular-nums text-ink">4.6 / 5</span>
             средний рейтинг
           </span>
           <span className="h-4 w-px bg-ink/10" />
           <span className="flex items-center gap-2">
-            <span className="font-extrabold tabular-nums text-ink">94%</span>
-            довели курс до конца
+            <span className="font-extrabold tabular-nums text-ink">72%</span>
+            активны на 4-й неделе
           </span>
           <span className="h-4 w-px bg-ink/10" />
           <span className="flex items-center gap-2">
-            <span className="font-extrabold tabular-nums text-ink">87%</span>
-            рекомендуют друзьям
+            <span className="font-extrabold tabular-nums text-ink">80%</span>
+            готовы рекомендовать
           </span>
         </div>
       </Reveal>

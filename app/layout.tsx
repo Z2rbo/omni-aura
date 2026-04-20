@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "компьютерное зрение",
     "AI coach",
     "план тренировок",
-    "ИТМО",
+    "фитнес-трекер",
   ],
   authors: [{ name: "OMNI AURA Team" }],
   openGraph: {

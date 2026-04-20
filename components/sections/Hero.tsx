@@ -36,9 +36,9 @@ export function Hero() {
               className="anim-rise inline-flex items-center gap-2 rounded-full border border-ink/10 bg-white/60 px-3 py-1.5 text-[12px] font-semibold text-ink-soft shadow-hairline backdrop-blur"
             >
               <Sparkles className="h-3.5 w-3.5 text-brand-500" />
-              <span className="text-brand-700">Проект ФТМИ ИТМО · 2026</span>
+              <span className="text-brand-700">Early stage · 2026</span>
               <span className="h-1 w-1 rounded-full bg-gray" />
-              <span>MVP готов</span>
+              <span>MVP в разработке</span>
             </div>
 
             <h1
@@ -121,8 +121,8 @@ export function Hero() {
                     </span>
                   ))}
                 </div>
-                <span className="font-semibold text-ink">2 000+ </span>
-                <span>в листе ожидания</span>
+                <span className="font-semibold text-ink">50+ </span>
+                <span>в раннем доступе</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <div className="flex text-brand-500">
@@ -130,7 +130,7 @@ export function Hero() {
                     <Star key={i} className="h-4 w-4 fill-current" />
                   ))}
                 </div>
-                <span className="font-semibold text-ink">4.9</span>
+                <span className="font-semibold text-ink">4.6</span>
                 <span>из 52 бета-тестов</span>
               </div>
             </div>

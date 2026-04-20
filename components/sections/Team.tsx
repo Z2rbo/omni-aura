@@ -13,34 +13,34 @@ type Member = {
 
 const team: Member[] = [
   {
-    initials: "МК",
-    name: "Макар",
-    role: "Founder · Product & Engineering",
-    bio: "ФТМИ ИТМО, курс 2026. Автор архитектуры, лидит разработку mobile и CV-pipeline.",
+    initials: "OA",
+    name: "Основатель",
+    role: "Product · Engineering",
+    bio: "Продуктовое видение, архитектура, разработка mobile и CV-pipeline. Лидит техническую часть MVP.",
     gradient: "from-brand-300 via-brand-500 to-brand-700",
     tags: ["React Native", "CV", "System design"],
   },
   {
-    initials: "АИ",
-    name: "AI-advisor",
-    role: "ML · CV Engineer",
-    bio: "Отвечает за pose-estimation пайплайн, тюнинг MediaPipe и оценку техники.",
+    initials: "ML",
+    name: "ML · CV",
+    role: "Computer Vision",
+    bio: "Отвечает за pose-estimation, тюнинг MediaPipe Pose и метрики оценки техники на устройстве.",
     gradient: "from-brand-500 via-brand-700 to-brand-500",
     tags: ["MediaPipe", "PyTorch", "Metrics"],
   },
   {
-    initials: "ДП",
-    name: "Дизайнер",
-    role: "Design · Motion",
-    bio: "Visual identity, моушн, Figma-прототипы. Всё что ты видишь на экране.",
+    initials: "DS",
+    name: "Дизайн",
+    role: "Visual · Motion",
+    bio: "Визуальная идентичность, моушн, Figma-прототипы. Всё, что ты видишь на экране.",
     gradient: "from-brand-100 via-brand-300 to-brand-500",
     tags: ["Figma", "Motion", "Brand"],
   },
   {
-    initials: "ВП",
-    name: "Бизнес-dev",
-    role: "Growth · B2B партнёры",
-    bio: "Связь с залами-партнёрами, фитнес-клубами ИТМО, pricing и unit-экономика.",
+    initials: "GR",
+    name: "Рост",
+    role: "Growth · Partnerships",
+    bio: "Связь с залами-партнёрами, фитнес-клубами, pricing и unit-экономика подписки.",
     gradient: "from-brand-700 via-brand-500 to-brand-300",
     tags: ["GTM", "Partnerships", "Pricing"],
   },
@@ -57,7 +57,7 @@ export function Team() {
           <span className="aurora-text">это делают</span>.
         </>
       }
-      lead="Кросс-функциональная команда: продукт, ML, дизайн, бизнес-развитие. База — ФТМИ ИТМО."
+      lead="Небольшая кросс-функциональная команда: продукт, ML, дизайн, бизнес-развитие."
     >
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {team.map((m, i) => (
@@ -115,27 +115,27 @@ export function Team() {
         ))}
       </div>
 
-      {/* University strip */}
+      {/* MVP strip */}
       <Reveal delay={450}>
         <div className="mt-12 flex flex-wrap items-center justify-center gap-4 rounded-[28px] bg-gradient-to-r from-cream-deep/80 via-white to-cream-deep/80 px-8 py-6 text-center shadow-hairline ring-1 ring-ink/5">
           <div className="flex items-center gap-3">
             <span className="grid h-10 w-10 place-items-center rounded-2xl bg-grad-aurora-solid text-white shadow-glow-sm">
               <span className="text-[11px] font-extrabold tracking-tight">
-                ИТМО
+                MVP
               </span>
             </span>
             <div className="text-left">
               <p className="text-[14px] font-bold text-ink">
-                Проект ФТМИ, Университет ИТМО
+                Ранняя команда · небольшой костяк
               </p>
               <p className="text-[12px] text-ink-soft">
-                Научный руководитель · 2026
+                Open to join · 2026
               </p>
             </div>
           </div>
           <div className="hidden h-8 w-px bg-ink/10 md:block" />
           <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-ink-soft">
-            <span className="text-brand-700">MVP</span> · конкурс стартапов 2026
+            <span className="text-brand-700">В разработке</span> · конкурс стартапов 2026
           </p>
         </div>
       </Reveal>
