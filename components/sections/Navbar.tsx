@@ -10,10 +10,10 @@ import { cn } from "@/lib/cn";
 
 const links = [
   { href: "#problem", label: "Проблема" },
-  { href: "#solution", label: "Решение" },
-  { href: "#how", label: "Как это работает" },
+  { href: "#impact", label: "Impact" },
+  { href: "#architecture", label: "Технология" },
   { href: "#pricing", label: "Тарифы" },
-  { href: "#roadmap", label: "Roadmap" },
+  { href: "#team", label: "Команда" },
 ];
 
 export function Navbar() {
