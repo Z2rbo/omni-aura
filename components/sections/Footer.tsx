@@ -85,9 +85,9 @@ export function Footer() {
   }
 
   return (
-    <footer className="relative border-t border-ink/5 bg-cream py-16 md:py-20">
-      <div className="mx-auto max-w-7xl px-6 md:px-10">
-        <div className="grid gap-12 lg:grid-cols-12">
+    <footer className="relative border-t border-ink/5 bg-cream py-12 md:py-20">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 md:px-10">
+        <div className="grid gap-10 md:gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <LogoWordmark />
             <p className="mt-5 max-w-sm text-pretty text-[15px] text-ink-soft">
@@ -151,7 +151,7 @@ export function Footer() {
             )}
           </div>
 
-          <div className="grid grid-cols-3 gap-6 lg:col-span-7">
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:col-span-7">
             {cols.map((c) => (
               <div key={c.title}>
                 <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-ink">
@@ -176,7 +176,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-ink/5 pt-8 text-[12px] text-gray">
+        <div className="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-ink/5 pt-8 text-[12px] text-gray md:mt-12">
           <p>© 2026 OMNI AURA</p>
           <div className="flex items-center gap-4">
             <Link

@@ -26,19 +26,19 @@ export const Section = forwardRef<HTMLElement, SectionProps>(
     return (
       <section
         ref={ref}
-        className={cn("relative py-24 md:py-32", className)}
+        className={cn("relative py-16 md:py-24 lg:py-32", className)}
         {...props}
       >
         <div
           className={cn(
-            "mx-auto w-full max-w-7xl px-6 md:px-10",
+            "mx-auto w-full max-w-7xl px-5 sm:px-6 md:px-10",
             innerClassName
           )}
         >
           {(eyebrow || title || lead) && (
             <header
               className={cn(
-                "mb-14 md:mb-20 max-w-3xl",
+                "mb-10 md:mb-14 lg:mb-20 max-w-3xl",
                 align === "center" && "mx-auto text-center"
               )}
             >
@@ -54,12 +54,12 @@ export const Section = forwardRef<HTMLElement, SectionProps>(
                 </div>
               )}
               {title && (
-                <h2 className="text-balance text-4xl font-extrabold leading-[1.05] tracking-tight text-ink md:text-5xl lg:text-6xl">
+                <h2 className="text-balance text-[30px] font-extrabold leading-[1.08] tracking-tight text-ink sm:text-4xl md:text-5xl lg:text-6xl">
                   {title}
                 </h2>
               )}
               {lead && (
-                <p className="mt-5 max-w-2xl text-pretty text-lg text-ink-soft md:text-xl">
+                <p className="mt-4 max-w-2xl text-pretty text-[15px] text-ink-soft sm:text-base md:mt-5 md:text-xl">
                   {lead}
                 </p>
               )}

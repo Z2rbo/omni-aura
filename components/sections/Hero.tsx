@@ -13,7 +13,7 @@ export function Hero() {
   const { open } = useLeadModal();
 
   return (
-    <section className="relative isolate overflow-hidden pt-32 md:pt-40">
+    <section className="relative isolate overflow-hidden pt-24 sm:pt-28 md:pt-40">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10 bg-grad-hero"
@@ -27,8 +27,8 @@ export function Hero() {
         className="pointer-events-none absolute inset-0 -z-10 [background-image:linear-gradient(rgba(23,21,31,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(23,21,31,0.04)_1px,transparent_1px)] [background-size:48px_48px] [mask-image:radial-gradient(ellipse_at_top,#000_30%,transparent_70%)]"
       />
 
-      <div className="mx-auto max-w-7xl px-6 md:px-10">
-        <div className="grid items-center gap-16 lg:grid-cols-12">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 md:px-10">
+        <div className="grid items-center gap-10 md:gap-12 lg:gap-16 lg:grid-cols-12">
           {/* Copy */}
           <div className="lg:col-span-7">
             <div
@@ -43,7 +43,7 @@ export function Hero() {
 
             <h1
               style={d(100)}
-              className="anim-rise-md mt-6 text-balance text-[44px] font-extrabold leading-[1.02] tracking-tighter text-ink md:text-[72px] lg:text-[88px]"
+              className="anim-rise-md mt-5 text-balance text-[40px] font-extrabold leading-[1.05] tracking-tight text-ink sm:text-[52px] md:mt-6 md:text-[72px] md:leading-[1.02] md:tracking-tighter lg:text-[88px]"
             >
               Твой личный{" "}
               <span className="relative inline-block">
@@ -72,7 +72,7 @@ export function Hero() {
 
             <p
               style={d(250)}
-              className="anim-rise mt-7 max-w-xl text-pretty text-lg text-ink-soft md:text-xl"
+              className="anim-rise mt-5 max-w-xl text-pretty text-[15px] text-ink-soft sm:text-base md:mt-7 md:text-xl"
             >
               Computer vision разберёт твою технику в реальном времени, ИИ
               соберёт план под твои цели и БЖУ. Без осуждения. Без дорогих
@@ -81,7 +81,7 @@ export function Hero() {
 
             <div
               style={d(400)}
-              className="anim-rise mt-9 flex flex-wrap items-center gap-3"
+              className="anim-rise mt-7 flex flex-wrap items-center gap-3 md:mt-9"
             >
               <Button
                 size="lg"
@@ -101,7 +101,7 @@ export function Hero() {
 
             <div
               style={d(600)}
-              className="anim-rise mt-10 flex flex-wrap items-center gap-6 text-[13px] text-ink-soft"
+              className="anim-rise mt-7 flex flex-wrap items-center gap-x-5 gap-y-3 text-[13px] text-ink-soft md:mt-10 md:gap-6"
             >
               <div className="flex items-center gap-2">
                 <div className="flex -space-x-2">
@@ -137,7 +137,7 @@ export function Hero() {
 
             <ul
               style={d(700)}
-              className="anim-rise mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-[13px] text-ink-soft"
+              className="anim-rise mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] text-ink-soft sm:text-[13px] sm:gap-x-5 md:mt-7"
             >
               {[
                 { icon: Eye, label: "CV-разбор техники" },
@@ -159,7 +159,7 @@ export function Hero() {
             style={d(200)}
             className="anim-rise-lg relative mx-auto lg:col-span-5"
           >
-            <div className="relative mx-auto grid h-[620px] w-[320px] place-items-center md:w-[420px] lg:w-[440px]">
+            <div className="relative mx-auto grid h-[480px] w-[260px] place-items-center sm:h-[560px] sm:w-[320px] md:h-[620px] md:w-[420px] lg:w-[440px]">
               <div className="absolute left-1/2 top-10 hidden -translate-x-[115%] rotate-[-10deg] md:block">
                 <PhoneFrame>
                   <GoalScreen />
@@ -202,8 +202,8 @@ export function Hero() {
         </div>
 
         {/* Tech stack */}
-        <div className="mt-28">
-          <div className="mx-auto max-w-5xl rounded-[28px] bg-white/50 px-6 py-7 shadow-hairline ring-1 ring-ink/5 backdrop-blur-sm md:px-10 md:py-8">
+        <div className="mt-16 sm:mt-20 md:mt-28">
+          <div className="mx-auto max-w-5xl rounded-[28px] bg-white/50 px-5 py-6 shadow-hairline ring-1 ring-ink/5 backdrop-blur-sm sm:px-6 sm:py-7 md:px-10 md:py-8">
             <p className="text-center text-[11px] font-bold uppercase tracking-[0.18em] text-ink-soft">
               Технологический стек
             </p>

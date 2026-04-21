@@ -41,10 +41,10 @@ export function Problem() {
       lead="Мы опросили 210 человек 16–30 лет. Три барьера повторялись у 88% респондентов — и никто не нашёл решения, которое бы их закрывало вместе."
       className="bg-cream"
     >
-      <div className="grid gap-16 lg:grid-cols-12">
+      <div className="grid gap-10 lg:gap-16 lg:grid-cols-12">
         {/* Donut stats */}
         <div className="lg:col-span-5">
-          <div className="relative rounded-4xl bg-white p-8 shadow-soft ring-1 ring-ink/5">
+          <div className="relative rounded-[28px] bg-white p-6 shadow-soft ring-1 ring-ink/5 sm:rounded-4xl sm:p-8">
             <div className="mb-6 flex items-center justify-between">
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-gray">
@@ -101,8 +101,8 @@ export function Problem() {
             ))}
           </div>
 
-          <div className="mt-6 rounded-3xl border border-dashed border-brand-500/30 bg-brand-50/60 p-6">
-            <p className="font-serif text-[20px] italic leading-snug text-ink md:text-[22px]">
+          <div className="mt-6 rounded-3xl border border-dashed border-brand-500/30 bg-brand-50/60 p-5 sm:p-6">
+            <p className="font-serif text-[18px] italic leading-snug text-ink sm:text-[20px] md:text-[22px]">
               «Людям нужен личный ИИ-помощник, который не осудит, подскажет
               технику и составит план».
             </p>

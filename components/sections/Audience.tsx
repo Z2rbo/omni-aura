@@ -65,7 +65,7 @@ export function Audience() {
       }
       lead="16–30 лет, начальный или нулевой уровень. Мотивация есть, денег на тренера — нет, а YouTube-ролики и Nike Training не дают обратной связи."
     >
-      <div className="grid gap-10 lg:grid-cols-12">
+      <div className="grid gap-8 lg:gap-10 lg:grid-cols-12">
         {/* Personas */}
         <div className="lg:col-span-7">
           <div className="grid gap-4 sm:grid-cols-2">
@@ -93,17 +93,17 @@ export function Audience() {
           <div className="mt-6 grid grid-cols-3 overflow-hidden rounded-3xl bg-ink text-cream">
             {[
               { v: "27M", l: "россиян 16–30" },
-              { v: "$24B", l: "глобальный fitness-tech" },
-              { v: "4.8x", l: "рост ИИ-fitness 2024→28" },
+              { v: "$24B", l: "fitness-tech" },
+              { v: "4.8x", l: "рост 24→28" },
             ].map((s) => (
               <div
                 key={s.l}
-                className="flex flex-col items-start justify-between gap-2 border-r border-white/10 p-6 last:border-r-0 md:p-8"
+                className="flex flex-col items-start justify-between gap-2 border-r border-white/10 p-4 last:border-r-0 sm:p-6 md:p-8"
               >
-                <p className="text-3xl font-extrabold tracking-tight text-white md:text-4xl">
+                <p className="text-2xl font-extrabold tracking-tight text-white sm:text-3xl md:text-4xl">
                   {s.v}
                 </p>
-                <p className="text-[12px] font-medium uppercase tracking-[0.1em] text-white/60">
+                <p className="text-[10px] font-medium uppercase tracking-[0.08em] text-white/60 sm:text-[11px] md:text-[12px] md:tracking-[0.1em]">
                   {s.l}
                 </p>
               </div>
@@ -113,7 +113,7 @@ export function Audience() {
 
         {/* Value props */}
         <div className="lg:col-span-5">
-          <div className="rounded-4xl bg-grad-surface p-8 shadow-float ring-1 ring-white/40">
+          <div className="rounded-[28px] bg-grad-surface p-6 shadow-float ring-1 ring-white/40 sm:rounded-4xl sm:p-8">
             <p className="text-[12px] font-bold uppercase tracking-[0.12em] text-brand-700">
               Почему выберут нас
             </p>

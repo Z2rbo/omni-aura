@@ -85,12 +85,12 @@ export function Pricing() {
         className="pointer-events-none absolute left-1/2 top-40 -z-10 h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(184,161,255,0.35),transparent_70%)] blur-3xl"
       />
 
-      <div className="mx-auto grid max-w-6xl gap-5 md:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl gap-4 sm:gap-5 md:grid-cols-3">
         {tiers.map((t, i) => (
           <Reveal key={t.key} delay={i * 80} className="h-full">
           <article
             className={cn(
-              "relative flex h-full flex-col rounded-4xl p-8 ring-1 transition-all hover:-translate-y-1",
+              "relative flex h-full flex-col rounded-[28px] p-6 ring-1 transition-all hover:-translate-y-1 sm:rounded-4xl sm:p-8",
               t.highlight
                 ? "bg-grad-surface ring-white/40 shadow-glow md:scale-[1.04] md:py-10"
                 : "bg-white ring-ink/5 shadow-soft hover:shadow-float"
@@ -119,11 +119,11 @@ export function Pricing() {
               </div>
             </div>
 
-            <div className="mt-8 flex items-end gap-2">
-              <span className="text-5xl font-extrabold tracking-tighter md:text-6xl">
+            <div className="mt-7 flex items-end gap-2 sm:mt-8">
+              <span className="text-[44px] font-extrabold leading-none tracking-tighter sm:text-5xl md:text-6xl">
                 {t.price}
               </span>
-              <span className="mb-2 text-[13px] font-semibold text-ink-soft">
+              <span className="mb-1.5 text-[13px] font-semibold text-ink-soft sm:mb-2">
                 {t.perks}
               </span>
             </div>
@@ -139,7 +139,7 @@ export function Pricing() {
               {t.cta}
             </Button>
 
-            <ul className="mt-8 space-y-3 text-[14px]">
+            <ul className="mt-7 space-y-3 text-[14px] sm:mt-8">
               {t.features.map((f) => (
                 <li key={f} className="flex items-start gap-3">
                   <span
@@ -162,14 +162,14 @@ export function Pricing() {
       </div>
 
       {/* Extra revenue streams */}
-      <div className="mx-auto mt-16 max-w-5xl rounded-4xl bg-ink p-8 text-cream md:p-10">
+      <div className="mx-auto mt-12 max-w-5xl rounded-[28px] bg-ink p-6 text-cream sm:mt-16 sm:rounded-4xl sm:p-8 md:p-10">
         <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-brand-300">
           Дополнительные потоки
         </p>
-        <h3 className="mt-2 text-3xl font-extrabold tracking-tight text-white md:text-4xl">
+        <h3 className="mt-2 text-2xl font-extrabold tracking-tight text-white sm:text-3xl md:text-4xl">
           Подписка — это только база.
         </h3>
-        <div className="mt-8 grid gap-6 md:grid-cols-4">
+        <div className="mt-6 grid gap-5 sm:mt-8 sm:grid-cols-2 sm:gap-6 md:grid-cols-4">
           {[
             { t: "Планы питания", b: "Отдельная покупка или внутри Premium" },
             { t: "Marketplace", b: "Программы от сертифицированных тренеров" },
