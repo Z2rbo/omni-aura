@@ -81,6 +81,7 @@ export function Navbar() {
           </Button>
           <Button
             size="sm"
+            className="hidden xs:inline-flex"
             onClick={() => openLead({ variant: "signup", source: "nav-cta" })}
           >
             Начни сейчас
@@ -111,6 +112,16 @@ export function Navbar() {
                 </Link>
               ))}
             </nav>
+            <Button
+              className="mt-2 w-full xs:hidden"
+              size="sm"
+              onClick={() => {
+                setOpen(false);
+                openLead({ variant: "signup", source: "nav-mobile-cta" });
+              }}
+            >
+              Начни сейчас
+            </Button>
           </div>
         </div>
       )}

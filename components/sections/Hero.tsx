@@ -27,7 +27,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-0 -z-10 [background-image:linear-gradient(rgba(23,21,31,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(23,21,31,0.04)_1px,transparent_1px)] [background-size:48px_48px] [mask-image:radial-gradient(ellipse_at_top,#000_30%,transparent_70%)]"
       />
 
-      <div className="mx-auto max-w-7xl px-5 sm:px-6 md:px-10">
+      <div className="mx-auto max-w-7xl px-4 xs:px-5 sm:px-6 md:px-10">
         <div className="grid items-center gap-10 md:gap-12 lg:gap-16 lg:grid-cols-12">
           {/* Copy */}
           <div className="lg:col-span-7">
@@ -43,7 +43,7 @@ export function Hero() {
 
             <h1
               style={d(100)}
-              className="anim-rise-md mt-5 text-balance text-[40px] font-extrabold leading-[1.05] tracking-tight text-ink sm:text-[52px] md:mt-6 md:text-[72px] md:leading-[1.02] md:tracking-tighter lg:text-[88px]"
+              className="anim-rise-md mt-5 text-balance text-[32px] font-extrabold leading-[1.08] tracking-tight text-ink xs:text-[40px] xs:leading-[1.05] sm:text-[52px] md:mt-6 md:text-[72px] md:leading-[1.02] md:tracking-tighter lg:text-[88px]"
             >
               Твой личный{" "}
               <span className="relative inline-block">
@@ -159,7 +159,7 @@ export function Hero() {
             style={d(200)}
             className="anim-rise-lg relative mx-auto lg:col-span-5"
           >
-            <div className="relative mx-auto grid h-[480px] w-[260px] place-items-center sm:h-[560px] sm:w-[320px] md:h-[620px] md:w-[420px] lg:w-[440px]">
+            <div className="relative mx-auto grid h-[440px] w-full max-w-[240px] place-items-center xs:h-[480px] xs:max-w-[260px] sm:h-[560px] sm:max-w-[320px] md:h-[620px] md:max-w-[420px] lg:max-w-[440px]">
               <div className="absolute left-1/2 top-10 hidden -translate-x-[115%] rotate-[-10deg] md:block">
                 <PhoneFrame>
                   <GoalScreen />
@@ -203,7 +203,7 @@ export function Hero() {
 
         {/* Tech stack */}
         <div className="mt-16 sm:mt-20 md:mt-28">
-          <div className="mx-auto max-w-5xl rounded-[28px] bg-white/50 px-5 py-6 shadow-hairline ring-1 ring-ink/5 backdrop-blur-sm sm:px-6 sm:py-7 md:px-10 md:py-8">
+          <div className="mx-auto max-w-5xl rounded-[28px] bg-white/50 px-4 py-5 shadow-hairline ring-1 ring-ink/5 backdrop-blur-sm xs:px-5 xs:py-6 sm:px-6 sm:py-7 md:px-10 md:py-8">
             <p className="text-center text-[11px] font-bold uppercase tracking-[0.18em] text-ink-soft">
               Технологический стек
             </p>

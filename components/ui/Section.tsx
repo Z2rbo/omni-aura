@@ -31,7 +31,7 @@ export const Section = forwardRef<HTMLElement, SectionProps>(
       >
         <div
           className={cn(
-            "mx-auto w-full max-w-7xl px-5 sm:px-6 md:px-10",
+            "mx-auto w-full max-w-7xl px-4 xs:px-5 sm:px-6 md:px-10",
             innerClassName
           )}
         >
@@ -54,12 +54,12 @@ export const Section = forwardRef<HTMLElement, SectionProps>(
                 </div>
               )}
               {title && (
-                <h2 className="text-balance text-[30px] font-extrabold leading-[1.08] tracking-tight text-ink sm:text-4xl md:text-5xl lg:text-6xl">
+                <h2 className="text-balance text-[26px] font-extrabold leading-[1.1] tracking-tight text-ink xs:text-[30px] xs:leading-[1.08] sm:text-4xl md:text-5xl lg:text-6xl">
                   {title}
                 </h2>
               )}
               {lead && (
-                <p className="mt-4 max-w-2xl text-pretty text-[15px] text-ink-soft sm:text-base md:mt-5 md:text-xl">
+                <p className="mt-3 max-w-2xl text-pretty text-[14px] text-ink-soft xs:mt-4 xs:text-[15px] sm:text-base md:mt-5 md:text-xl">
                   {lead}
                 </p>
               )}

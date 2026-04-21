@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "380px",
+      },
       colors: {
         cream: {
           DEFAULT: "#F7F6F0",

@@ -86,7 +86,7 @@ export function Footer() {
 
   return (
     <footer className="relative border-t border-ink/5 bg-cream py-12 md:py-20">
-      <div className="mx-auto max-w-7xl px-5 sm:px-6 md:px-10">
+      <div className="mx-auto max-w-7xl px-4 xs:px-5 sm:px-6 md:px-10">
         <div className="grid gap-10 md:gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <LogoWordmark />

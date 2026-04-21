@@ -9,8 +9,8 @@ import { useLeadModal } from "@/components/ui/LeadModalProvider";
 export function CTA() {
   const { open } = useLeadModal();
   return (
-    <section id="cta" className="relative overflow-hidden px-5 pb-20 sm:px-6 md:px-10 md:pb-32">
-      <div className="mx-auto grid max-w-7xl items-center gap-10 overflow-hidden rounded-[32px] bg-ink p-7 text-white sm:rounded-[44px] sm:p-10 md:grid-cols-12 md:p-16 lg:p-20">
+    <section id="cta" className="relative overflow-hidden px-4 pb-20 xs:px-5 sm:px-6 md:px-10 md:pb-32">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 overflow-hidden rounded-[28px] bg-ink p-5 text-white xs:rounded-[32px] xs:p-7 sm:rounded-[44px] sm:p-10 md:grid-cols-12 md:p-16 lg:p-20">
         {/* Aurora decoration */}
         <div
           aria-hidden
@@ -27,13 +27,13 @@ export function CTA() {
             Первые 500 пользователей — Premium на год в подарок
           </span>
 
-          <h2 className="mt-6 text-balance text-[36px] font-extrabold leading-[1.05] tracking-tight sm:text-5xl sm:leading-[1.02] sm:tracking-tighter md:text-6xl lg:text-7xl">
+          <h2 className="mt-6 text-balance text-[28px] font-extrabold leading-[1.1] tracking-tight xs:text-[36px] xs:leading-[1.05] sm:text-5xl sm:leading-[1.02] sm:tracking-tighter md:text-6xl lg:text-7xl">
             Готов поменять{" "}
             <span className="bg-[linear-gradient(110deg,#B8A1FF,#FFFFFF)] bg-clip-text text-transparent">
               отношение к телу?
             </span>
           </h2>
-          <p className="mt-5 max-w-xl text-pretty text-[15px] text-white/70 sm:text-base md:mt-6 md:text-xl">
+          <p className="mt-4 max-w-xl text-pretty text-[14px] text-white/70 xs:mt-5 xs:text-[15px] sm:text-base md:mt-6 md:text-xl">
             Скачай OMNI AURA, пройди онбординг за 3 минуты и получи 31 день
             Premium бесплатно. Без карточки. Без уловок.
           </p>
